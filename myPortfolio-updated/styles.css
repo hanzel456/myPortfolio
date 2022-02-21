@@ -1,0 +1,103 @@
+body{
+  margin: 0;
+  background-color: #eeeeee;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.rcontainer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo{
+  width:120px;
+}
+
+h1{
+  margin: 2rem 0;
+}
+
+h2{
+  margin: 2em;
+}
+
+p{
+  line-height: 1.7em;
+}
+
+.left{
+  background-image: linear-gradient(90deg, rgb(114, 7, 74),rgb(232, 54, 104));
+  padding: 1em 2em;
+  color: white;
+}
+
+button{
+  margin: 2em 0;
+}
+
+@media only screen and (min-width : 1024px){
+
+  p{
+    line-height: 2em;
+  }
+
+  h1{
+    font-weight: bold;
+  }
+
+  .logo{
+    margin: 1em 0;
+    width: 3em;
+  }
+
+  .header{
+    margin: 2.5em 0.5rem;
+  }
+
+  .row{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 55% auto;
+  }
+
+  .left{
+    text-align: left;
+  }
+
+  span{
+    display: block;
+  }
+
+  .right{
+    text-align: right;
+    align-self: center;
+    justify-content: center;
+  }
+
+button{
+  width: 70%;
+  margin-right: 2.6em;
+}
+
+.rectangle-rcontainer{
+  -webkit-clip-path: inset(0 45% 0 0);
+  position: absolute;
+  top: 20%;
+  height: 70%;
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.rectangle{
+  position: relative;
+  border: 3px solid rgba(255,255,255,.1);
+  width: 19%;
+  height: 80%;
+  float: left;
+  margin-left: 1em;
+  transform: translateX(10%);
+}
+
+}
